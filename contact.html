@@ -17,29 +17,30 @@
             <a href="Produits.html">Produits</a>
             <a href="contact.html">Contact</a>
         </nav>
-         <div class="menu-btn" onclick="toggleMenu()">☰</div>
+        <div class="menu-btn" onclick="toggleMenu()">☰</div>
     </header>
-
-    <section class="contact">
-        <div class="background-shapes"></div>
-        <div class="container">
-            <div class="header">
-                <h1>Contact Us</h1>
-                <p>soumettez nous vos avis</p>
+   
+        <section class="contact">
+            <div class="background-shapes"></div>
+            <div class="container">
+                <div class="header">
+                    <h1>Contact Us</h1>
+                    <p>soumettez nous vos avis</p>
+                </div>
+                <div class="form-box">
+                    <form id="contactForm">
+                        <div class="row">
+                            <input type="text" placeholder="Full Name" required>
+                            <input type="email" placeholder="Email Address" required>
+                        </div>
+                        <input type="text" placeholder="Subject" required>
+                        <textarea placeholder="Your Message" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
             </div>
-            <div class="form-box">
-                <form id="contactForm">
-                    <div class="row">
-                        <input type="text" placeholder="Full Name" required>
-                        <input type="email" placeholder="Email Address" required>
-                    </div>
-                    <input type="text" placeholder="Subject" required>
-                    <textarea placeholder="Your Message" required></textarea>
-                    <button type="submit">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
+        </section>
+    
     <script src="script.js"></script>
     <footer>
         <p>© 2026 Unshakable Perfection</p>

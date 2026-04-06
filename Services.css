@@ -1,114 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
+    background: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
 
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
-body{background:#f5f5f5}
-header{display:flex;justify-content:space-between;align-items:center;padding:20px 60px;background:#000;color:#fff}
-.logo span{color:gold}
-nav a{color:#fff;margin:15px;text-decoration:none}
-.hero{display:flex; height: 75Vh; background-repeat: no-repeat; padding-left: 60px; background-position: center -50px; background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("066a87f6c150f83f54e3e0b0f8f508ab.jpg");
-    justify-content:space-between;align-items:center;padding:100px;;background-size:cover;color:#fff; margin-top: -20px;}
-.hero-text h1{font-size:50px}
+main{
+    flex: 1;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: #000;
+    color: #fff
+}
+
+.logo span {
+    color: gold
+}
+
+nav a {
+    color: #fff;
+    margin: 15px;
+    text-decoration: none
+}
+
+.hero {
+    display: flex;
+    height: 75Vh;
+    background-repeat: no-repeat;
+    padding-left: 60px;
+    background-position: center -50px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("066a87f6c150f83f54e3e0b0f8f508ab.jpg");
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    ;
+    background-size: cover;
+    color: #fff;
+    margin-top: -20px;
+}
+
+.hero-text h1 {
+    font-size: 50px
+}
 
 
-.hero-text span{color:gold}
-.btn{background:orange;padding:10px 20px;text-decoration:none;color:#fff}
-.login-box{background:rgba(0,0,0,0.8);padding:20px;border-radius:10px;width:250px; float: right;}
-.login-box input{width:100%;padding:8px;margin-bottom:10px}
-.page{padding:60px;text-align:center}
-.page h1{
+.hero-text span {
+    color: gold
+}
+
+.btn {
+    background: orange;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff
+}
+
+.login-box {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    float: right;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px
+}
+
+.page {
+    padding: 60px;
+    text-align: center
+}
+
+.page h1 {
     margin-bottom: 30px;
     font-size: 40px;
     color: #222;
 }
 
-.cards{
+.cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
-    gap:25px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
     padding: 20px;
 }
 
-.card{background:#fff;padding:30px;border-radius:15px;text-align:center; font-size: 20px; font-weight: bold; transition: 0.3s; box-shadow:0 10px 20px rgba(0,0,0,0.8)}
-/*faire changer de couleur au clic*/
-.card:hover{
-transform: translate(-10px); box-shadow: 0 15px 30px rgb(0,0,0,0.5);
-background: orange;
-color: #f5f5f5;
+.card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8)
 }
-.card h3{
+
+/*faire changer de couleur au clic*/
+.card:hover {
+    transform: translate(-10px);
+    box-shadow: 0 15px 30px rgb(0, 0, 0, 0.5);
+    background: orange;
+    color: #f5f5f5;
+}
+
+.card h3 {
     color: gold;
 }
-.cards img{
+
+.cards img {
     width: 100%;
     margin-top: 15px;
     border-radius: 10px;
     height: 180px;
     object-fit: cover;
 }
-.gallery{display:flex;justify-content:center;gap:20px;flex-wrap:wrap}
-.gallery img{width:250px;border-radius:10px}
-.contact-form{display:flex;flex-direction:column;max-width:400px;margin:auto;gap:10px}
-.contact-form input,.contact-form textarea{padding:10px}
-footer{background:#000;color:#fff;text-align:center;padding:18px;}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap
+}
+
+.gallery img {
+    width: 250px;
+    border-radius: 10px
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+    gap: 10px
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px
+}
+
+footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 18px;
+}
 
 
 /*rendre RESPONSIVE*/
-@media(max-width:768px){
-    nav-ul{flex-direction: column;}
-    .cards{flex-direction: column;align-items: center;}
-    .galerie img{width: 90%;}}
+@media(max-width:768px) {
+    nav-ul {
+        flex-direction: column;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .galerie img {
+        width: 90%;
+    }
+}
 
 
 
-    /*rendre adaptable à tout type d'écrans*/
+/*rendre adaptable à tout type d'écrans*/
 
 /*images adaptablea*/
-img{
+img {
     max-width: 100%;
     height: auto;
 }
 
 /*tablette*/
-@media(max-width:900px){
-    .hero{
+@media(max-width:900px) {
+    .hero {
         flex-direction: column;
         text-align: center;
         padding: 50px;
     }
-    .login-box{
+
+    .login-box {
         margin-top: 20px;
     }
-    .cards{
+
+    .cards {
         grid-template-columns: 1fr 1fr;
     }
 }
 
 /*telephone*/
-@media(max-width:600px){
-header{
-    flex-direction: column;
-}
-nav{
-    display: flex;
-    flex-direction: column;
-    background: #000;
-    position: absolute;
-    top: 70px;
-    right: 20px;
-    padding: 20px;
-}
-.menu btn{
-    display: block;
-    font-size: 26px;
-    cursor: pointer;
-}
-.hero h1{
-    font-size: 28px;
-}
-.cards{
-    grid-template-columns: 1fr;
-}
-.page{
-    padding:20px;
-}
+@media(max-width:600px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        background: #000;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        padding: 20px;
+    }
+
+    .menu btn {
+        display: block;
+        font-size: 26px;
+        cursor: pointer;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .page {
+        padding: 20px;
+    }
 }
