@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial
+}
+
+body {
+    background: #ebe4e4;
+    display: flex;
+    flex-direction: column;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: #000;
+    color: #fff
+}
+
+.logo span {
+    color: gold
+}
+
+nav a {
+    color: #fff;
+    margin: 15px;
+    text-decoration: none
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 50px; margin-top:120px; /*deplace le texte vers le bas*/
+    margin-left: 100px;
+}
+
+#bg {
+    height: 85vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(Acceuil.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+
+}
+
+.hero-text span {
+    color: rgb(221, 219, 72)
+}
+
+.btn {
+    background: rgb(236, 216, 36);
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.login-box {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    float: right;
+    margin-top: 450px;
+   
+    margin-left: auto;
+
+}
+
+.login-box input {
+    width: 100%;
+    padding: 9px;
+    margin-bottom: 10px;
+    margin: 6px;
+    margin-top: center;
+}
+
+.page {
+    padding: 60px;
+    text-align: center
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap
+}
+
+.gallery img {
+    width: 250px;
+    border-radius: 10px
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+    gap: 10px
+}
+
+.contact-form input .contact-form textarea {
+    padding: 10px
+}
+
+footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 18px;
+}
+
+
+/*rendre RESPONSIVE*/
+@media(max-width:768px) {
+    nav-ul {
+        flex-direction: column;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .galerie img {
+        width: 90%;
+    }
+}
+
+
+/*rendre adaptable à tout type d'écrans*/
+
+/*images adaptablea*/
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/*tablette*/
+@media(max-width:900px){
+    .hero{
+        flex-direction: column;
+        text-align: center;
+        padding: 50px;
+    }
+    .login-box{
+        margin-top: 20px;
+    }
+    .cards{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/*telephone*/
+@media(max-width:600px){
+header{
+    flex-direction: column;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    background: #000;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    padding: 20px;
+}
+.menu btn{
+    display: block;
+    font-size: 26px;
+    cursor: pointer;
+}
+.hero h1{
+    font-size: 28px;
+}
+.cards{
+    grid-template-columns: 1fr;
+}
+.page{
+    padding:20px;
+}
+}
